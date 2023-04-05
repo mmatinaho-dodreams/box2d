@@ -1420,7 +1420,7 @@ bool b2ContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB)
     }
 
     bool collideA = (filterA.maskBits & filterB.categoryBits) != 0;
-    bool collideB = (filterA.categoryBits & filterB.maskBits) != 0
+    bool collideB = (filterA.categoryBits & filterB.maskBits) != 0;
     bool collide =  collideA && collideB;
     return collide;
 }
